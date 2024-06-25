@@ -7,13 +7,344 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/red" />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/red" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@color/red" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="33dp"
+            android:layout_height="60dp"
+            android:background="@color/green" />
+
+        <LinearLayout
+            android:layout_width="33dp"
+            android:layout_height="60dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="33dp"
+            android:layout_height="60dp"
+            android:background="@color/red" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@color/yellow" />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="15dp"
+            android:background="@color/blue" />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="15dp"
+            android:background="@color/red" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="60dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@color/red" />
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@color/green" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="9dp"
+            android:background="@color/red" />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="9dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="24dp"
+            android:background="@color/blue1" />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="9dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="9dp"
+            android:background="@color/red" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="20dp">
+
+            <LinearLayout
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:background="@color/red1"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:background="@color/white"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="65dp"
+                android:layout_height="20dp"
+                android:background="@color/red1"></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="10dp"
+            android:background="@color/white"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:background="@color/red1"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="10dp"
+                android:layout_height="30dp"
+                android:background="@color/white"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:background="@color/red1"></LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="62dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout6"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <LinearLayout
+            android:layout_width="25dp"
+            android:layout_height="60dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@color/red">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="25dp"
+                android:layout_height="10dp"
+                android:orientation="horizontal"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="12dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/red">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="12dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@color/red">
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="15dp"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@color/red">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@color/white">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@color/red">
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="25dp"
+            android:layout_height="60dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@color/red">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="25dp"
+                android:layout_height="10dp"
+                android:orientation="horizontal"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="12dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="12dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/red">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@color/red">
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
